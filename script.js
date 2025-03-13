@@ -20,10 +20,38 @@ function validateForm() {
 
 
 function showDetails(){
-    const x = document.getElementById("myDetails1");
-    x.open = true;
-
+    const y = document.getElementById("myDetails1");
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.innerHTML = "Hide Details"
+    } else {
+      x.style.display = "none";
+      y.innerHTML = "Show Details"
+    }
 }
+
+
+function showDetails1(){
+    const y = document.getElementById("myDetails2");
+    var x = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.innerHTML = "Hide Details"
+    } else {
+      x.style.display = "none";
+      y.innerHTML = "Show Details"
+    }
+}
+
+
+// }
+
+// function showDetails1(){
+//     var x = document.getElementById("myDetails1");
+
+
+// }
 
 
 // function validateForm(){
