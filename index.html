@@ -14,8 +14,9 @@
         <h1>Rohit Purandhara</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#slideshow">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills-section">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -32,63 +33,163 @@
         <div class="about-text">
           <h2>Welcome!</h2>
           <p>Hi! I'm Rohit — an aspiring coder who loves exploring the world of programming. When I’m not writing code, I’m probably gaming, playing sports, or enjoying some delicious food.</p>
+          <p>Below is a slideshow to help you get to know me better!</p>
         </div>
 
       </div>
     </section>
-    
+<!-- Slideshow container -->
+
+<section id = "slideshow">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="guard.jpg" style="width:100%">
+    <div class="text">Before coding I was an avid swimmer and lifeguard. I still work from time to time, but not as much as I used to before</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="piano2.jpg" style="width:100%">
+    <div class="text">I started playing the piano when I was 6. I won multiple competitions and made it all the way to level 9</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="poke2.jpg" style="width:100%">
+    <div class="text">I'm a big fan of games. Pokemon Platinum is my favourite game of all time</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="cricket.jpg" style="width:100%">
+    <div class="text">When the weather is good, I like to go outside and play cricket with my team</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</section>
+
+
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>Heres 7 projects that I've worked on, click on the projects tab to see more of my work</p>
+        <p>Heres 7 projects that I've worked on, click on the projects to go to the website</p>
   
         <div class="gallery">
-          <a target="_blank" href="form.jpg">
+          <a target="_blank" href="https://rohit-187.github.io/accessible-registration/">
             <img src="form.jpg" alt="Cinque Terre" width="600" height="400">
           </a>
           <div class="desc">A form created with CSS</div>
         </div>
         
         <div class="gallery">
-          <a target="_blank" href="practice.jpg">
+          <a target="_blank" href="https://rohit-187.github.io/css-fundamentals/">
             <img src="practice.jpg" alt="Forest" width="600" height="400">
           </a>
           <div class="desc">A starter website built with html</div>
         </div>
         
         <div class="gallery">
-          <a target="_blank" href="local.jpg">
+          <a target="_blank" href="https://rohit-187.github.io/localStorage/">
             <img src="local.jpg" alt="Northern Lights" width="600" height="400">
           </a>
           <div class="desc">A website that works on local storage</div>
         </div>
         <div class="gallery">
-          <a target="_blank" href="local.jpg">
+          <a target="_blank" href="group.jpg">
             <img src="group.jpg" alt="Northern Lights" width="600" height="400">
           </a>
-          <div class="desc">A website that works on local storage</div>
+          <div class="desc">A website that helps tourists coming to Canada</div>
         </div>
         <div class="gallery">
-          <a target="_blank" href="local.jpg">
+          <a target="_blank" href="https://rohit-187.github.io/interactive-quiz_/">
             <img src="quiz.jpg" alt="Northern Lights" width="600" height="400">
           </a>
-          <div class="desc">A website that works on local storage</div>
+          <div class="desc">A website with a basic quiz</div>
         </div>
         <div class="gallery">
-          <a target="_blank" href="local.jpg">
+          <a target="_blank" href="game.jpg">
             <img src="game.jpg" alt="Northern Lights" width="600" height="400">
           </a>
-          <div class="desc">A website that works on local storage</div>
+          <div class="desc">A website that gives game reccomendations</div>
         </div>
         <div class="gallery">
-          <a target="_blank" href="local.jpg">
+          <a target="_blank" href="https://rohit-187.github.io/my-first-webpage/">
             <img src="dog.jpg" alt="Northern Lights" width="600" height="400">
           </a>
-          <div class="desc">A website that works on local storage</div>
+          <div class="desc">My very first website!</div>
         </div>
         <div class="clearfix"></div>
     </section>
+
+
+<!--     <section id="skills">
+      <div class="skills-section">
+        <button class="toggle-btn" onclick="toggleVisibility('skills')">Show Skills</button>
+        <div id="skills" class="list-content">
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React & Vue.js</li>
+            <li>Node.js & Express</li>
+            <li>Python & Flask</li>
+            <li>SQL & MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="skills-section">
+        <button class="toggle-btn" onclick="toggleVisibility('awards')">Show Awards</button>
+        <div id="awards" class="list-content">
+          <ul>
+            <li>Best Developer Award - 2023</li>
+            <li>Hackathon Winner - CodeFest 2022</li>
+            <li>Top Contributor - Open Source 2021</li>
+          </ul>
+        </div>
+      </div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <section id="skills-section">
+    <div class="container">
+      <div class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>Python</li>
+        </ul>
+      </div>
+
+    <div class="section" id="Achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Bethune Scholar</li>
+        <li>Waterloo Math contest</li>
+        <li>Piano First class honours</li>
+        <li>OBA Winner</li>
+      </ul>
+    </div>
+  </div>
+  </section>
 
 
     <!-- Contact Section -->
@@ -109,10 +210,11 @@
         <button onclick ="validateForm()" type="submit">Send</button>
         
     </section>
+    
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2025 Rohit Purandhara</p>
     </footer>
 </body>
 </html>
