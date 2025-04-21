@@ -78,5 +78,27 @@ function showDetails1(){
         
 //     }
 // }
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, i, txtValue;
 
+  // What the user inputs
+  input = document.getElementById("myInput");
+
+  // Convert input to uppercase for case-insensitive match
+  filter = input.value.toUpperCase();
+
+  // Reference the unordered list and its list items
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items
+  for (i = 0; i < li.length; i++) {
+    // Get text from the list item
+    txtValue = li[i].textContent || li[i].innerText;
+
+    // Check if user input exists in the item text
+    li[i].style.display = txtValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+  }
+}
 
